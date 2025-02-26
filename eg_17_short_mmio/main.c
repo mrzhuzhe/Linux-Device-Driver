@@ -41,6 +41,7 @@ ssize_t short_read(struct file *filp, char __user *buf, size_t count, loff_t *f_
 	(*f_pos)++;
 
 	if (copy_to_user(buf, &v, 1)) {
+		pr_debug("%s\n", buf);
 		return -EFAULT;
 	}
 

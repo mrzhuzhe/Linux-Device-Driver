@@ -13,8 +13,8 @@
 
 static int major = 0;
 
-static unsigned long base = 0x200;
-// static unsigned long base = 0x378;
+//static unsigned long base = 0x200;
+static unsigned long base = 0x378;
 unsigned long short_base = 0;
 void __iomem *short_iomem;
 
