@@ -103,6 +103,7 @@ static vm_fault_t simple_vma_fault(struct vm_fault *vmf)
 	return 0;
 }
 
+// linux/mm.h	vm_area_struct
 static struct vm_operations_struct simple_fault_vm_ops = {
 	.open	=  simple_vma_open,
 	.close	= simple_vma_close,
