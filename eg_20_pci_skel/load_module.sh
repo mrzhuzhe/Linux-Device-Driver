@@ -9,7 +9,7 @@ function load() {
 
     rm -f /dev/${device}
 
-    major=$(awk -v device="$device" '$2==device {print $1}' /proc/devices)
+    major=$(awk -v device="$device" '$2==device {print $1}' /proc/devices)  # Notice no line == device
     mknod /dev/${device} c $major 0
 
     chgrp $group /dev/${device}
@@ -21,7 +21,7 @@ function unload() {
     rmmod $module || exit 1
 }
 
-arg=${1:-"load"}
+arg=${1:-"reload"}
 case $arg in
     load)
         load ;;
