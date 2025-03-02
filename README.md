@@ -65,3 +65,4 @@ Linux-Device-Driver by d0u9 is licensed under a
 
 [1]: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 [https://lwn.net/Kernel/LDD3/]: https://lwn.net/Kernel/LDD3/
+
